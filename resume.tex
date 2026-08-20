@@ -1,0 +1,273 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Chaitanya Sai G N
+% Based on: https://github.com/jakeryang/resume
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+
+% Font
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+% ATS / machine-readable PDF
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% Colors
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.30}
+\definecolor{text-grey}{gray}{0.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% Custom underline
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+% Page style
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.55in}
+\addtolength{\textheight}{1.05in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+    \bfseries \vspace{2pt} \raggedright \large
+}{}{0em}{}[\color{light-grey}{\titlerule[1.5pt]} \vspace{-4pt}]
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\
+      \textit{#3} & {\color{dark-grey}\small #4}\\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}\small #2} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{
+  \begin{itemize}[leftmargin=0in, label={}]
+}
+
+\newcommand{\resumeSubHeadingListEnd}{
+  \end{itemize}
+}
+
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}[leftmargin=0.15in]
+}
+
+\newcommand{\resumeItemListEnd}{
+  \end{itemize}\vspace{0pt}
+}
+
+\color{text-grey}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \textbf{Chaitanya Sai G N}} \\ \vspace{4pt}
+
+    \small
+    \faPhone* \hspace{2pt} +91 6303422643
+    \hspace{5pt} $|$ \hspace{5pt}
+    \faEnvelope \hspace{2pt}
+    \href{mailto:chaitanyareddy3110@gmail.com}{chaitanyareddy3110@gmail.com}
+    \hspace{5pt} $|$ \hspace{5pt}
+    \faMapMarker* \hspace{2pt} Bangalore, India
+
+    \\ \vspace{4pt}
+
+    \small
+    \textbf{Hybrid Cloud Engineer}
+    \hspace{3pt} $|$ \hspace{3pt}
+    Windows Server Administration
+    \hspace{3pt} $|$ \hspace{3pt}
+    VMware
+    \hspace{3pt} $|$ \hspace{3pt}
+    Azure
+    \hspace{3pt} $|$ \hspace{3pt}
+    Infrastructure Operations
+    \hspace{3pt} $|$ \hspace{3pt}
+    Microsoft Defender for Cloud
+    \hspace{3pt} $|$ \hspace{3pt}
+    ServiceNow
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {Cognizant}{March 2025 -- Present}
+    {Hybrid Cloud Engineer}{Bangalore, India}
+
+\resumeItemListStart
+
+\resumeItem{Administer and maintain \textbf{Windows Server environments (2012, 2016, 2019, and 2022)}, supporting system availability, performance, stability, and day-to-day enterprise infrastructure operations.}
+
+\resumeItem{Manage \textbf{VMware vSphere infrastructure}, including virtual machine provisioning, resource allocation, health monitoring, and lifecycle management for business-critical workloads.}
+
+\resumeItem{Support hybrid cloud operations using \textbf{Microsoft Azure}, including Azure Virtual Machines, Azure Storage, Azure Virtual Networks, subnets, and Azure Portal for resource management and monitoring.}
+
+\resumeItem{Resolve infrastructure incidents, service requests, and operational issues through \textbf{ServiceNow}, meeting defined SLAs and maintaining service reliability.}
+
+\resumeItem{Perform \textbf{DNS and DHCP administration}, server health checks, infrastructure monitoring, troubleshooting, and routine operational maintenance.}
+
+\resumeItem{Perform \textbf{monthly Windows Server patching} activities, including pre-patch and post-patch validation, service verification, troubleshooting, and compliance follow-up.}
+
+\resumeItem{Troubleshoot and remediate \textbf{Microsoft Defender for Cloud security and compliance recommendations}, improving server security posture and reducing infrastructure non-compliance.}
+
+\resumeItem{Use \textbf{PowerShell-based scripts} for routine server health checks and service monitoring, leveraging \textbf{AI-assisted development} to support script creation and troubleshooting.}
+
+\resumeItem{Apply \textbf{Generative AI and prompt engineering} techniques to accelerate troubleshooting, root cause analysis, technical documentation, and day-to-day infrastructure support activities.}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {Enterprise Hybrid Cloud Infrastructure Operations}{2025 -- Present}
+    {Azure, Windows Server, VMware/AVS, DNS, DHCP, Defender for Cloud, ServiceNow}{Professional Project}
+
+\resumeItemListStart
+
+\resumeItem{Supported enterprise hybrid cloud infrastructure across \textbf{Microsoft Azure, Windows Server, and VMware/AVS} environments, ensuring availability, stability, and operational continuity.}
+
+\resumeItem{Performed \textbf{Azure VM provisioning and deployment}, Azure Virtual Network and subnet configuration, Azure Storage administration, and routine Azure platform operations.}
+
+\resumeItem{Administered \textbf{Windows Server 2012/2016/2019/2022} environments, including server health checks, Windows services, DNS/DHCP administration, troubleshooting, and operational maintenance.}
+
+\resumeItem{Performed \textbf{monthly Windows Server patching}, including pre-patch validation, post-patch health checks, service verification, issue troubleshooting, and compliance follow-up.}
+
+\resumeItem{Supported \textbf{VMware vSphere and Azure VMware Solution (AVS)} operations, including VM provisioning, resource allocation, health monitoring, and infrastructure troubleshooting.}
+
+\resumeItem{Monitored and remediated \textbf{Microsoft Defender for Cloud security and compliance recommendations}, contributing to improved server security posture and reduced non-compliance.}
+
+\resumeItem{Used \textbf{ServiceNow} for incident management, service requests, and change management while meeting defined operational SLAs.}
+
+\resumeItem{Utilized \textbf{PowerShell-based scripts and AI-assisted scripting} to support routine server health checks, service monitoring, and infrastructure administration activities.}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {VEMU Institute of Technology}{Feb 2020 -- May 2024}
+    {Bachelor of Technology (B.Tech) in Mechanical Engineering}{Andhra Pradesh, India}
+
+\resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------
+\section{SKILLS}
+
+\begin{itemize}[leftmargin=0in, label={}]
+\small{\item{
+
+\textbf{Cloud \& Hybrid Infrastructure:}
+Microsoft Azure, Azure Virtual Machines, Azure Virtual Networks, Subnets, Azure Storage, Azure Portal, Azure VMware Solution (AVS) \\
+
+\textbf{Windows Server Administration:}
+Windows Server 2012/2016/2019/2022, DNS, DHCP, Windows Services, Server Health Monitoring, Windows Patching, Troubleshooting \\
+
+\textbf{Virtualization:}
+VMware vSphere, ESXi, vCenter, VM Provisioning, Resource Allocation, VM Health Monitoring, Azure VMware Solution (AVS) \\
+
+\textbf{Scripting \& Automation:}
+PowerShell (Basic), AI-Assisted Scripting, Server Health Checks, Service Monitoring, Routine Administrative Automation \\
+
+\textbf{Security \& Compliance:}
+Microsoft Defender for Cloud, Security Recommendations, Compliance Remediation, Server Security Posture \\
+
+\textbf{Monitoring \& ITSM:}
+SolarWinds, ServiceNow, Incident Management, Service Requests, Change Management, SLA Management \\
+
+\textbf{Networking:}
+TCP/IP, DNS, DHCP, Azure VNet, Subnets, Network Troubleshooting, Firewall Fundamentals
+
+}}
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
